@@ -1,3 +1,17 @@
+@keyframes aparecer{
+  0%{
+      opacity: 0;
+  }
+  100%{
+      opacity: 1;
+  } 
+  }
+  header{
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: initial;
+
+  }
 header{
     position:sticky;
     top: 0;

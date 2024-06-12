@@ -1,3 +1,17 @@
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+header {
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: initial;
+}
+
 header {
   position: sticky;
   top: 0;
@@ -75,6 +89,9 @@ h1 {
 .carousel-item h5 {
   background-color: azure;
 }
+.carousel-item p {
+  background-color: azure;
+}
 
 .d-block {
   height: 100%;
@@ -85,6 +102,20 @@ h1 {
 
 .d-block:hover {
   opacity: 0.5;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+h2 {
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
 }
 
 .contenedor {
@@ -105,11 +136,23 @@ h1 {
   opacity: 0.74;
 }
 
+footer {
+  background-color: rgb(147, 216, 44);
+}
 footer .redes-sociales {
-  height: 50px;
-  min-width: 50px;
-  margin-inline-start: 20px;
-  border-radius: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+footer i {
+  width: 80px;
+  height: 100px;
+  color: black;
+}
+footer .bi {
+  font-size: 2em;
 }
 
 .wpp {

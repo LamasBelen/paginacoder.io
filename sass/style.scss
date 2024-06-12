@@ -1,8 +1,8 @@
+$color-principal:rgb(147, 216, 44);
 @import './layout/header';
 
 @import "./utilities/reset";
 @import "./utilities/global";
-
 @import "./pages/index";
 @import "./pages/nosotros";
 @import "./pages/productos";
