@@ -10,9 +10,8 @@
     animation-duration: 2s;
     animation-name: aparecer;
     animation-iteration-count: initial;
-
-  }
-header{
+   
+    &  {
     position:sticky;
     top: 0;
     z-index: 100;
@@ -21,6 +20,7 @@ header{
     justify-content: center;
     align-items: center;
     filter: drop-shadow(0px 0px 15px #000);
+    }
 
     .header__logo{
         max-width: 100%;
@@ -76,4 +76,5 @@ header{
         }
       }
      
-}
+
+  }
