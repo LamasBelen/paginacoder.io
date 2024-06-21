@@ -1,105 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michistore</title>
+    <meta name="description" content="Revisa los productos en tu carrito de compras en Michistore y completa tu pedido para darle a tu gato lo mejor.">
+    <meta name="keywords" content="Michistore, carrito de compras, tienda de gatos, productos para gatos, compra de productos para gatos">
+    <title>Michistore - Carrito de Compras</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
     <header class="header">
-        <input type="checkbox"class="header_checkbox" id="open-menu">
+        <input type="checkbox" class="header_checkbox" id="open-menu">
         <label for="open-menu" class="header_open-nav-button" role="button">=</label>
         <div class="header__logo-container">
-          <a href="../index.html">
-            <img class="header__logo" src="../img/logo.png">
+            <a href="../index.html">
+                <img class="header__logo" src="../img/logo.png" alt="Michistore Logo">
+            </a>
         </div>
         <nav class="header_nav">
             <ul class="header_nav-list">
-                <li class="header_nav-item"> <a href="../index.html">inicio</a>
-                 <li class="header_nav-item"> <a href="nosotros.html">nosotros</a>    
-                 <li class="header_nav-item"> <a href="productos.html">productos</a>
-                <li class="header_nav-item"> <a href="envios.html">envios</a>
-                    <li class="header_nav-item"> <a href="#">carrito</a>
-
-                </li>
+                <li class="header_nav-item"><a href="../index.html">Inicio</a></li>
+                <li class="header_nav-item"><a href="nosotros.html">Nosotros</a></li>
+                <li class="header_nav-item"><a href="productos.html">Productos</a></li>
+                <li class="header_nav-item"><a href="envios.html">Envíos</a></li>
+                <li class="header_nav-item active"><a href="#">Carrito</a></li>
             </ul>
         </nav>
     </header>
     <main>
-      <form class="row g-3">
-        <div class="col-md-6">
-          <label for="inputEmail4" class="form-label">Email</label>
-          <input type="email" class="form-control" id="inputEmail4">
-        </div>
-        <div class="col-md-6">
-          <label for="inputPassword4" class="form-label">contraseña</label>
-          <input type="password" class="form-control" id="inputPassword4">
-        </div>
-        <div class="col-12">
-          <label for="inputAddress" class="form-label">direccion</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-        </div>
-        <div class="col-12">
-          <label for="inputAddress2" class="form-label">departamento</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-        </div>
-        <div class="col-md-6">
-          <label for="inputCity" class="form-label">provincia</label>
-          <input type="text" class="form-control" id="inputCity">
-        </div>
-        <div class="col-md-4">
-          <label for="inputState" class="form-label">ciudad</label>
-          <select id="inputState" class="form-select">
-            <option selected>Choose...</option>
-            <option>...</option>
-          </select>
-        </div>
-        <div class="col-md-2">
-          <label for="inputZip" class="form-label">codigo postal</label>
-          <input type="text" class="form-control" id="inputZip">
-        </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              no soy un bot
-            </label>
-          </div>
-        </div>
-        <div class="col-12">
-          <button type="submit" class="btn btn-primary">Sign in</button>
-        </div>
-      </form>
+        <section class="container mt-5">
+            <h2>Carrito de Compras</h2>
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="card mb-3">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="../img/juguete2.png" class="img-fluid rounded-start" alt="Producto 1">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Producto 1</h5>
+                                    <p class="card-text">Rascador y cama.</p>
+                                    <p class="card-text"><small class="text-muted">Cantidad: 1</small></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                      <div class="row g-0">
+                          <div class="col-md-4">
+                              <img src="../img/tunel-gato.png" class="img-fluid rounded-start" alt="Producto 1">
+                          </div>
+                          <div class="col-md-8">
+                              <div class="card-body">
+                                  <h5 class="card-title">Producto 2</h5>
+                                  <p class="card-text">Tunel.</p>
+                                  <p class="card-text"><small class="text-muted">Cantidad: 1</small></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+          
+                </div>
 
+                <div class="col-md-4">
+                    <!-- Resumen del carrito y formulario de compra -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Resumen del Carrito</h5>
+                            <p class="card-text">Subtotal: $10000</p>
+                            <p class="card-text">Envío: $100</p>
+                            <p class="card-text">Total: $10100</p>
+                            <a href="compra.html" class="btn btn-primary">Completar Compra</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <div class="redes-sociales"> 
-         
-     <a href="https://es-la.facebook.com/">
-              <i class="bi bi-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com/">
-              <i class="bi bi-instagram"></i>
-            </a>
-    <a href="https://github.com/">
-      <i class="bi bi-github"></i>  
-            </a>
-        
-        <div class="wpp">
-            <a href="https://www.whatsapp.com/?lang=es">
-              <i class="bi bi-whatsapp"></i>
-            </a>
-    
+        <div class="redes-sociales">
+            <a href="https://es-la.facebook.com/"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+            <a href="https://github.com/"><i class="bi bi-github"></i></a>
+            <div class="wpp">
+              <a href="https://www.whatsapp.com/?lang=es"> <i class="bi bi-whatsapp"></i> </a>
+          </div>
+            <a href="https://maps.app.goo.gl/2G7cxSLZyevxkr1a8"><i class="bi bi-geo-alt"></i></a>
         </div>
-    <a href="https://maps.app.goo.gl/2G7cxSLZyevxkr1a8">
-              <i class="bi bi-geo-alt"></i>
-            </a>
-        </div>
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
